@@ -1,5 +1,7 @@
 # snippet-base
 
+## Apex
+
 | Command | Meaning | Description |
 | --- | --- | --- |
 | `apx` | apex  | Apex related commands |
@@ -8,12 +10,16 @@
 | `apx.dt.account` |
 | `apx.dt.user` |
 
+## LWC
+
 | Command | Meaning | Description |
 | --- | --- | --- |
 | `lwc` | Lightning Web Component | LWC related commands |
 | `lwc.imp` | import | generate import header |
 | `lwc.imp.apex-method` |
 | `lwc.imp.publish-channel` |
+
+## XML
 
 | Command | Meaning | Description |
 | --- | --- | --- |
