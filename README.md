@@ -7,3 +7,5 @@
 | `apx.dt.contact` |
 | `apx.dt.account` |
 | `apx.dt.user` |
+||
+| lwc | Lightning Web Component | LWC related commands |
