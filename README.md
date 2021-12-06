@@ -20,7 +20,7 @@
 | lwc.imp.`publish-channel` |
 | lwc.`teml` | template | generate snipet for template |
 | lwc.teml.`if` |
-| lwc.teml.'for' |
+| lwc.teml.`for` |
 
 ## XML
 
