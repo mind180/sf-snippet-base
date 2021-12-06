@@ -18,6 +18,9 @@
 | lwc.`imp` | import | generate import header |
 | lwc.imp.`apex-method` |
 | lwc.imp.`publish-channel` |
+| lwc.`teml` | template | generate snipet for template |
+| lwc.teml.`if` |
+| lwc.teml.'for' |
 
 ## XML
 
