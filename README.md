@@ -22,7 +22,7 @@ cont.Name = 'Name';
 insert cont;
 ```
 
-`apx.dt.Uer`
+`apx.dt.User`
 ```apex
 Profile prof = [SELECT Id FROM Profile WHERE Name='NAME'];
 User user = new User();
