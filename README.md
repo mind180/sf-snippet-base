@@ -1,5 +1,5 @@
 # snippet-base 
-[`APEX`](#1) [`LWC`](#2) [`XML`](#3)
+[`APEX`](#1) [`LWC`](#2) [`XML`](#3) [`INFO`](#4)
 
 ## <a name="1">Apex</a>
 
@@ -57,3 +57,16 @@ user.UserName = 'std@test.com';
 | xml.`meta` | metadata | Generate metadata |
 | xml.meta.`lwc` |  | Generate metdata for LWC |
 | xml.meta.lwc.`message-channel` |
+ 
+  ## <a name="4">Information</a>
+  
+ | Command | Meaning | Description |
+| --- | --- | --- |
+| `inf` | information | Data as information |
+| inf.`link` | link | Generate link |
+|  |  | Example: `inf.link.download` |
+  
+ `inf.link.download`
+```
+/sfc/servlet.shepherd/document/download/
+```
