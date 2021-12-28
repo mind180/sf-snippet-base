@@ -1,5 +1,5 @@
 # snippet-base 
-[`APEX`](#1) [`LWC`](#2) [`XML`](#3) [`INFO`](#4)
+[`APEX`](#1) [`LWC`](#2) [`XML`](#3) [`INFO`](#4) [`AURA`](#5) 
 
 ## <a name="1">Apex</a>
 
@@ -69,4 +69,20 @@ user.UserName = 'std@test.com';
  `inf.link.download`
 ```
 /sfc/servlet.shepherd/document/download/
+```
+ 
+  
+  ## <a name="5">AURA</a>
+  
+ | Command | Meaning | Description |
+| --- | --- | --- |
+| `aura` | aura | Aura components related commands |
+| aura.`temp` | template | aura template related commands |
+| aura.temp.`attribute` | attribute | generate attribute |
+| aura.`contr` | controller | aura controller related commands |
+|  |  | Example: `aura.temp.attribute` |
+  
+ `aura.temp.attribute`
+```
+<aura:attribute name="Name" type="String" default="string"/>
 ```
