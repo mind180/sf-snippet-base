@@ -86,6 +86,17 @@ user.UserName = 'std@test.com';
 ```
 <aura:attribute name="Name" type="String" default="string"/>
 ```
+ `aura.temp.attribute.all-types`
+```
+<aura:attribute name="Name" type="String" default="string" />
+<aura:attribute name="showDetail" type="Boolean" />
+<aura:attribute name="startDate" type="Date" />
+<aura:attribute name="lastModifiedDate" type="DateTime" />
+<aura:attribute name="totalPrice" type="Decimal" />
+<aura:attribute name="widthInchesFractional" type="Double" />
+<aura:attribute name="numRecords" type="Integer" />
+<aura:attribute name="numSwissBankAccount" type="Long" />
+```
 
  `aura.contr.file-preview`
 ```
