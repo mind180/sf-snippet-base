@@ -82,7 +82,17 @@ user.UserName = 'std@test.com';
 | aura.`contr` | controller | aura controller related commands |
 |  |  | Example: `aura.temp.attribute` |
   
- `aura.temp.attribute`
+`aura.temp.attribute`
 ```
 <aura:attribute name="Name" type="String" default="string"/>
 ```
+
+ `aura.contr.file-preview`
+```
+$A.get('e.lightning:openFiles').fire({
+  recordIds: [contentDocumentId]
+});
+```
+ 
+ 
+ 
