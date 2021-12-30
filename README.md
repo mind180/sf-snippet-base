@@ -21,6 +21,14 @@ Contact cont = new Contact();
 cont.Name = 'Name';
 insert cont;
 ```
+`apx.dt.ContentVersion`
+```apex
+new contentVersion(
+  Title = 'Test ' + i,
+  PathOnClient = 'test',
+  VersionData = EncodingUtil.base64Decode('Unit Test Attachment Body')
+)
+```
 
 `apx.dt.User`
 ```apex
@@ -50,21 +58,20 @@ user.UserName = 'std@test.com';
 | lwc.teml.`for` |
  
 `lwc.teml.if`
-```
+```js
 <template if:true={areDetailsVisible}>
  
 </template>
 ```
  
 `lwc.teml.for`
-```
+```js
 <template for:each={contacts} for:item="contact">
   <li key={contact.Id}>
     {contact.Name}
   </li>
 </template>
-```
- 
+``` 
 
 
 ## <a name="3">XML<a>
@@ -86,7 +93,7 @@ user.UserName = 'std@test.com';
   
  `inf.link.download`
 ```
-/sfc/servlet.shepherd/document/download/
+/sfc/servlet.shepherd/document/download/{ContentDocumentId}
 ```
  
   
