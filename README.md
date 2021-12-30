@@ -48,6 +48,24 @@ user.UserName = 'std@test.com';
 | lwc.`teml` | template | generate snipet for template |
 | lwc.teml.`if` |
 | lwc.teml.`for` |
+ 
+`lwc.teml.if`
+```
+<template if:true={areDetailsVisible}>
+ 
+</template>
+```
+ 
+`lwc.teml.for`
+```
+<template for:each={contacts} for:item="contact">
+  <li key={contact.Id}>
+    {contact.Name}
+  </li>
+</template>
+```
+ 
+
 
 ## <a name="3">XML<a>
 
