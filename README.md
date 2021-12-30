@@ -11,26 +11,26 @@
 
 `apx.dt.Account`
 ```apex
-Account acc = new Account();
-acc.Name = 'Name';
-insert acc;
+Account account = new Account(
+  Name = 'Name'
+);
 ```
 `apx.dt.Contact`
 ```apex
-Contact cont = new Contact();
-cont.Name = 'Name';
-insert cont;
+Contact contact = new Contact(
+ Name = 'Name'
+);
 ```
 `apx.dt.ContentVersion`
 ```apex
 new contentVersion(
-  Title = 'Test ' + i,
+  Title = 'Title',
   PathOnClient = 'test',
-  VersionData = EncodingUtil.base64Decode('Unit Test Attachment Body')
-)
+  VersionData = EncodingUtil.base64Decode('Attachment Body')
+);
 ```
 
-`apx.dt.User`
+`apx.dt.User` `NEED REDESIGN`
 ```apex
 Profile prof = [SELECT Id FROM Profile WHERE Name='NAME'];
 User user = new User();
@@ -53,18 +53,18 @@ user.UserName = 'std@test.com';
 | lwc.`imp` | import | generate import header |
 | lwc.imp.`apex-method` |
 | lwc.imp.`publish-channel` |
-| lwc.`teml` | template | generate snipet for template |
-| lwc.teml.`if` |
-| lwc.teml.`for` |
+| lwc.`temp` | template | generate snipet for template |
+| lwc.temp.`if` |
+| lwc.temp.`for` |
  
-`lwc.teml.if`
+`lwc.temp.if`
 ```js
 <template if:true={areDetailsVisible}>
  
 </template>
 ```
  
-`lwc.teml.for`
+`lwc.temp.for`
 ```js
 <template for:each={contacts} for:item="contact">
   <li key={contact.Id}>
