@@ -6,22 +6,22 @@
 | Command | Meaning | Description |
 | --- | --- | --- |
 | `apx` | apex  | Apex related commands |
-| apx.`dt` | data | Generate data |
-| apx.dt.`ObjectName` | object name | Example: `apx.dt.My_CustomObject__c` |
+| apx.`obj` | object | Generate object |
+| apx.obj.`ObjectName` | object name | Example: `apx.dt.My_CustomObject__c` |
 
-`apx.dt.Account`
+`apx.obj.Account`
 ```apex
 Account account = new Account(
   Name = 'Name'
 );
 ```
-`apx.dt.Contact`
+`apx.obj.Contact`
 ```apex
 Contact contact = new Contact(
  Name = 'Name'
 );
 ```
-`apx.dt.ContentVersion`
+`apx.obj.ContentVersion`
 ```apex
 new contentVersion(
   Title = 'Title',
@@ -30,7 +30,7 @@ new contentVersion(
 );
 ```
 
-`apx.dt.User` `NEED REDESIGN`
+`apx.obj.User` `NEED REDESIGN`
 ```apex
 Profile prof = [SELECT Id FROM Profile WHERE Name='NAME'];
 User user = new User();
