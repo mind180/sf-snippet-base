@@ -129,6 +129,14 @@ $A.get('e.lightning:openFiles').fire({
   recordIds: [contentDocumentId]
 });
 ```
- 
+  
+`aura.contr.component.find`
+```
+const someComponent = component.find("componentName")
+``` 
+`aura.contr.component.get`
+```
+const componentAttribute = component.find("componentName").get("v.attributename")
+``` 
  
  
