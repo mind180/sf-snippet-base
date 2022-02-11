@@ -12,10 +12,28 @@
 | apx.obj.`ObjectName` | object name | Example: `apx.dt.My_CustomObject__c` |
 
 `apx.obj.Account`
-```apex
-Account account = new Account(
-  Name = 'Name'
-);
+```json
+{
+	"Account": {
+	 	"prefix": "apx.obj.Account",
+	 	"body": [
+	 		"Account account = new Account("
+			"	$0Name = 'Name'"
+		   	");"
+	 	],
+	 	"description": "Generate Account"
+	},
+
+	"Contact": {
+		"prefix": "apx.obj.Contact",
+		"body": [
+			"Contact contact = new Contact("
+			"	Name = 'Name'"
+			");"
+		],
+		"description": "Generate Contact"
+   }
+}
 ```
 `apx.obj.Contact`
 ```apex
